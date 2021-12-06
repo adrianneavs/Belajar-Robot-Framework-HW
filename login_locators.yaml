@@ -1,0 +1,11 @@
+txtUsername : user-name
+txtPassword : password
+btnLogin : login-button
+btnProduct1 : add-to-cart-sauce-labs-backpack
+btnCart : shopping_cart_link
+btnCheckout : checkout
+txtFirstName : first-name
+txtLastName : last-name
+txtPostalCode : postal-code
+btnContCheckout : continue
+btnFinishCheckout : finish

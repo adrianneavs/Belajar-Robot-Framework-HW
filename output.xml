@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.9 on win32)" generated="20211206 12:21:14.071" rpa="false" schemaversion="2">
+<suite id="s1" name="TestSorting" source="C:\Users\User\Documents\GitHub\Belajar-Robot-Framework-HW\TestSorting.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${WebURL}</arg>
+<arg>${BROWSERS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211206 12:21:14.463" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211206 12:21:14.462" endtime="20211206 12:21:16.289"/>
+</kw>
+<test id="s1-t1" name="Login success and successfully checkout product">
+<kw name="I want to login with valid credentials and do shopping">
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=user-name</arg>
+<arg>${Vusername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 12:21:16.296" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20211206 12:21:16.295" endtime="20211206 12:21:16.570"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${Vpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211206 12:21:16.571" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20211206 12:21:16.571" endtime="20211206 12:21:16.788"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 12:21:16.788" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20211206 12:21:16.788" endtime="20211206 12:21:17.040"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=product_sort_container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211206 12:21:17.041" level="INFO">Clicking element 'class=product_sort_container'.</msg>
+<status status="PASS" starttime="20211206 12:21:17.040" endtime="20211206 12:21:17.329"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class=product_sort_container</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211206 12:21:17.330" level="INFO">Selecting options from selection list 'class=product_sort_container' by index 3.</msg>
+<status status="PASS" starttime="20211206 12:21:17.329" endtime="20211206 12:21:17.541"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 12:21:17.877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211206 12:21:17.541" endtime="20211206 12:21:17.877"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class=product_sort_container</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211206 12:21:17.878" level="INFO">Selecting options from selection list 'class=product_sort_container' by index 2.</msg>
+<status status="PASS" starttime="20211206 12:21:17.878" endtime="20211206 12:21:18.056"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 12:21:18.390" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211206 12:21:18.057" endtime="20211206 12:21:18.391"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class=product_sort_container</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211206 12:21:18.391" level="INFO">Selecting options from selection list 'class=product_sort_container' by index 1.</msg>
+<status status="PASS" starttime="20211206 12:21:18.391" endtime="20211206 12:21:18.542"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 12:21:18.902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211206 12:21:18.542" endtime="20211206 12:21:18.902"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>class=product_sort_container</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20211206 12:21:18.903" level="INFO">Selecting options from selection list 'class=product_sort_container' by index 0.</msg>
+<status status="PASS" starttime="20211206 12:21:18.903" endtime="20211206 12:21:19.051"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211206 12:21:19.338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211206 12:21:19.051" endtime="20211206 12:21:19.338"/>
+</kw>
+<status status="PASS" starttime="20211206 12:21:16.293" endtime="20211206 12:21:19.339"/>
+</kw>
+<status status="PASS" starttime="20211206 12:21:16.289" endtime="20211206 12:21:19.339"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211206 12:21:19.341" endtime="20211206 12:21:21.462"/>
+</kw>
+<status status="PASS" starttime="20211206 12:21:14.073" endtime="20211206 12:21:21.462"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSorting">TestSorting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
